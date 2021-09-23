@@ -145,5 +145,15 @@ function shoeSize(name) {
     }
 }
 
+function teamColors(teamName){
+    let filterd = object['home']['teamName']
 
-console.log(shoeSize('Brendan Haywood'))
+    if(filterd === teamName) {
+        return object['home']['colors']
+    } else {
+        return object['away']['colors']
+    }
+
+  }
+
+console.log(teamColors('Charlotte Hornets'));
